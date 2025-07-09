@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "crashloopfixer",
+  "version": "1.0.0-meme",
+  "name": "CrashLoopFixer",
+  "description": "Restarts Minecraft automatically after crashes. Comes with spicy meme logs and ModMenu toggle support. 💀🔥",
+  "authors": ["Aaliyaan"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/crashloopfixer/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.aaliyaan.crashloopfixer.CrashLoopFixer"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "1.21.4"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
