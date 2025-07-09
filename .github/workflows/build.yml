@@ -19,8 +19,12 @@ jobs:
           java-version: 17
           distribution: temurin
 
-      - name: Generate Gradle Wrapper
-        run: ./gradlew wrapper
+      - name: Generate Gradle Wrapper (if missing)
+        run: |
+          if [ ! -f ./gradlew ]; then
+            echo "Gradle wrapper missing. Generating..."
+            gradle wrapper
+          fi
 
       - name: Build mod
         run: ./gradlew build
