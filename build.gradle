@@ -1,6 +1,15 @@
-plugins {
-    id 'fabric-loom' version '1.5.11'
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://maven.fabricmc.net/' }
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath "net.fabricmc:fabric-loom:1.5.11"
+    }
 }
+
+apply plugin: 'fabric-loom'
 
 group = 'com.aaliyaan.crashloopfixer'
 version = '1.0.0-meme'
