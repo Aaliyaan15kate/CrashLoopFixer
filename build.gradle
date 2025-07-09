@@ -1,5 +1,12 @@
+pluginManagement {
+    repositories {
+        maven { url 'https://maven.fabricmc.net/' } // Added FabricMC plugin repo
+        gradlePluginPortal()                       // Default Gradle plugins repo
+    }
+}
+
 plugins {
-    id 'fabric-loom' version '0.12-SNAPSHOT'
+    id 'fabric-loom' version '1.6-SNAPSHOT'
 }
 
 group = 'com.aaliyaan.crashloopfixer'
